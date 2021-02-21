@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		432E81C07B430D9ED0AAC984 /* Pods_Prueba_conocimientos_Francisco.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D730A6D49FC24EBEF809DC71 /* Pods_Prueba_conocimientos_Francisco.framework */; };
 		ADA5CAFE25E2DAAB00E0C4B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA5CAFD25E2DAAB00E0C4B5 /* AppDelegate.swift */; };
 		ADA5CB0025E2DAAB00E0C4B5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA5CAFF25E2DAAB00E0C4B5 /* SceneDelegate.swift */; };
 		ADA5CB0225E2DAAB00E0C4B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA5CB0125E2DAAB00E0C4B5 /* ViewController.swift */; };
 		ADA5CB0525E2DAAB00E0C4B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADA5CB0325E2DAAB00E0C4B5 /* Main.storyboard */; };
 		ADA5CB0725E2DAAC00E0C4B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADA5CB0625E2DAAC00E0C4B5 /* Assets.xcassets */; };
 		ADA5CB0A25E2DAAC00E0C4B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADA5CB0825E2DAAC00E0C4B5 /* LaunchScreen.storyboard */; };
+		ADA5CB1725E2E2D500E0C4B5 /* LogInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA5CB1625E2E2D500E0C4B5 /* LogInController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		60BBDDADEAEDBB8D74D12C0C /* Pods-Prueba conocimientos Francisco.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prueba conocimientos Francisco.release.xcconfig"; path = "Target Support Files/Pods-Prueba conocimientos Francisco/Pods-Prueba conocimientos Francisco.release.xcconfig"; sourceTree = "<group>"; };
 		ADA5CAFA25E2DAAB00E0C4B5 /* Prueba conocimientos Francisco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Prueba conocimientos Francisco.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADA5CAFD25E2DAAB00E0C4B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADA5CAFF25E2DAAB00E0C4B5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		ADA5CB0625E2DAAC00E0C4B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADA5CB0925E2DAAC00E0C4B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ADA5CB0B25E2DAAC00E0C4B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADA5CB1625E2E2D500E0C4B5 /* LogInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInController.swift; sourceTree = "<group>"; };
+		D0C1A794C233251EB3E3A4DA /* Pods-Prueba conocimientos Francisco.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prueba conocimientos Francisco.debug.xcconfig"; path = "Target Support Files/Pods-Prueba conocimientos Francisco/Pods-Prueba conocimientos Francisco.debug.xcconfig"; sourceTree = "<group>"; };
+		D730A6D49FC24EBEF809DC71 /* Pods_Prueba_conocimientos_Francisco.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Prueba_conocimientos_Francisco.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				432E81C07B430D9ED0AAC984 /* Pods_Prueba_conocimientos_Francisco.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D9CEE031D898BAF2738854E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D0C1A794C233251EB3E3A4DA /* Pods-Prueba conocimientos Francisco.debug.xcconfig */,
+				60BBDDADEAEDBB8D74D12C0C /* Pods-Prueba conocimientos Francisco.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		ADA5CAF125E2DAAB00E0C4B5 = {
 			isa = PBXGroup;
 			children = (
 				ADA5CAFC25E2DAAB00E0C4B5 /* Prueba conocimientos Francisco */,
 				ADA5CAFB25E2DAAB00E0C4B5 /* Products */,
+				8D9CEE031D898BAF2738854E /* Pods */,
+				E1B5364AF5207A41A0339345 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +75,64 @@
 		ADA5CAFC25E2DAAB00E0C4B5 /* Prueba conocimientos Francisco */ = {
 			isa = PBXGroup;
 			children = (
+				ADA5CB1D25E2E3B100E0C4B5 /* Networking */,
+				ADA5CB1B25E2E31300E0C4B5 /* Helpers */,
+				ADA5CB1525E2E28E00E0C4B5 /* Model */,
+				ADA5CB1425E2E28300E0C4B5 /* View */,
+				ADA5CB1325E2E27600E0C4B5 /* Controller */,
 				ADA5CAFD25E2DAAB00E0C4B5 /* AppDelegate.swift */,
 				ADA5CAFF25E2DAAB00E0C4B5 /* SceneDelegate.swift */,
-				ADA5CB0125E2DAAB00E0C4B5 /* ViewController.swift */,
 				ADA5CB0325E2DAAB00E0C4B5 /* Main.storyboard */,
 				ADA5CB0625E2DAAC00E0C4B5 /* Assets.xcassets */,
 				ADA5CB0825E2DAAC00E0C4B5 /* LaunchScreen.storyboard */,
 				ADA5CB0B25E2DAAC00E0C4B5 /* Info.plist */,
 			);
 			path = "Prueba conocimientos Francisco";
+			sourceTree = "<group>";
+		};
+		ADA5CB1325E2E27600E0C4B5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ADA5CB0125E2DAAB00E0C4B5 /* ViewController.swift */,
+				ADA5CB1625E2E2D500E0C4B5 /* LogInController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		ADA5CB1425E2E28300E0C4B5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ADA5CB1525E2E28E00E0C4B5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ADA5CB1B25E2E31300E0C4B5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		ADA5CB1D25E2E3B100E0C4B5 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		E1B5364AF5207A41A0339345 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D730A6D49FC24EBEF809DC71 /* Pods_Prueba_conocimientos_Francisco.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +142,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ADA5CB0E25E2DAAC00E0C4B5 /* Build configuration list for PBXNativeTarget "Prueba conocimientos Francisco" */;
 			buildPhases = (
+				39D485C569F8A226B3C8C1ED /* [CP] Check Pods Manifest.lock */,
 				ADA5CAF625E2DAAB00E0C4B5 /* Sources */,
 				ADA5CAF725E2DAAB00E0C4B5 /* Frameworks */,
 				ADA5CAF825E2DAAB00E0C4B5 /* Resources */,
+				C55D2708A553A71C8AC5605B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,12 +202,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		39D485C569F8A226B3C8C1ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Prueba conocimientos Francisco-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C55D2708A553A71C8AC5605B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Prueba conocimientos Francisco/Pods-Prueba conocimientos Francisco-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Prueba conocimientos Francisco/Pods-Prueba conocimientos Francisco-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Prueba conocimientos Francisco/Pods-Prueba conocimientos Francisco-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ADA5CAF625E2DAAB00E0C4B5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				ADA5CB0225E2DAAB00E0C4B5 /* ViewController.swift in Sources */,
+				ADA5CB1725E2E2D500E0C4B5 /* LogInController.swift in Sources */,
 				ADA5CAFE25E2DAAB00E0C4B5 /* AppDelegate.swift in Sources */,
 				ADA5CB0025E2DAAB00E0C4B5 /* SceneDelegate.swift in Sources */,
 			);
@@ -283,6 +396,7 @@
 		};
 		ADA5CB0F25E2DAAC00E0C4B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0C1A794C233251EB3E3A4DA /* Pods-Prueba conocimientos Francisco.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +416,7 @@
 		};
 		ADA5CB1025E2DAAC00E0C4B5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60BBDDADEAEDBB8D74D12C0C /* Pods-Prueba conocimientos Francisco.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
