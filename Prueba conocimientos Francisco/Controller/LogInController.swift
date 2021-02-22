@@ -41,6 +41,8 @@ class LogInController: UIViewController {
     private func setupView() {
         view.backgroundColor = .white
         userTextInput.isTrailingButtonVisible = false
+        userTextInput.inputTextField.autocapitalizationType = .none
+        userTextInput.inputTextField.autocorrectionType = .no
         userTextInput.leadingImageView.image = UIImage(systemName: ImageName.emailImage)
         passwordTextInput.leadingImageView.image = UIImage(systemName: ImageName.passwordImage)
         

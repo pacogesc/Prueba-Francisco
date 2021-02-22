@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import JGProgressHUD
+import AVFoundation
 
 class HomeCollectionController: UICollectionViewController {
     
@@ -15,6 +17,8 @@ class HomeCollectionController: UICollectionViewController {
     private let textOptions = ["Noticias", "GYM", "Comparte", "Rutinas"]
 
     private let reuseIdentifier = "Cell"
+    
+    var videoPicker: VideoPicker!
     
     //MARK: - Init
     
@@ -30,11 +34,17 @@ class HomeCollectionController: UICollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        collectionView.backgroundColor = #colorLiteral(red: 0.3351675868, green: 0.2796953321, blue: 0.4996795654, alpha: 1)
-        self.collectionView!.register(OptionsHomeCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+        setupCollectionView()
     }
     
     //MARK: - Helpers
+    
+    private func setupCollectionView() {
+        collectionView.backgroundColor = #colorLiteral(red: 0.3351675868, green: 0.2796953321, blue: 0.4996795654, alpha: 1)
+        self.collectionView!.register(OptionsHomeCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+        
+        videoPicker = VideoPicker(presentationController: self, delegate: self)
+    }
 
 }
 
@@ -59,7 +69,12 @@ extension HomeCollectionController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("Debug \(indexPath.item)")
+        switch indexPath.item {
+        case 2:
+            videoPicker.present(from: self.view)
+        default:
+            print("Debug default")
+        }
     }
     
 }
@@ -91,5 +106,27 @@ extension HomeCollectionController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return .init(top: 16, left: 16, bottom: 16, right: 16)
+    }
+}
+
+extension HomeCollectionController: VideoPickerDelegate {
+    func didSelectVideo(videoUrl: URL?) {
+        guard let selectedFileURL = videoUrl else {
+            return
+        }
+        
+        let hud = JGProgressHUD(style: .light)
+        hud.show(in: view)
+        
+        let avAsset = AVURLAsset(url: selectedFileURL, options: nil)
+        avAsset.exportVideo(outputFileType: .mp4, fileExtension: "mp4") { [weak self] (url) in
+            DispatchQueue.main.async {
+                hud.dismiss()
+                if let urlVideo = url {
+                    self?.navigationController?.pushViewController(VideoShareController(urlVideo: urlVideo), animated: true)
+                }
+            }
+        }
+        hud.dismiss()
     }
 }

@@ -50,7 +50,8 @@ class TextInput: UIView {
         self.placeHolder = placeHolder
         super.init(frame: .zero)
         leadingImageView.tintColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
-        self.inputTextField.placeholder = placeHolder
+        self.inputTextField.attributedPlaceholder = NSAttributedString(string: placeHolder, attributes: placeHolderAttributes)
+        self.inputTextField.textColor = .black
         self.inputTextField.keyboardType = keyboardType
         self.inputTextField.isSecureTextEntry = isSecureTextEntry
         self.backgroundColor = backgroundColor

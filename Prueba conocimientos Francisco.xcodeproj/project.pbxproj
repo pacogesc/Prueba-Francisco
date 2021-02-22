@@ -23,6 +23,8 @@
 		ADA5CB3A25E31E9900E0C4B5 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA5CB3925E31E9900E0C4B5 /* ProfileController.swift */; };
 		ADA5CB3D25E3262400E0C4B5 /* ProgressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA5CB3C25E3262400E0C4B5 /* ProgressController.swift */; };
 		ADA5CB4125E32B8B00E0C4B5 /* OptionsHomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA5CB4025E32B8B00E0C4B5 /* OptionsHomeCell.swift */; };
+		ADA5CB4A25E33DE300E0C4B5 /* VideoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA5CB4925E33DE300E0C4B5 /* VideoPicker.swift */; };
+		ADA5CB4E25E3459200E0C4B5 /* VideoShareController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA5CB4D25E3459200E0C4B5 /* VideoShareController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		ADA5CB3925E31E9900E0C4B5 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		ADA5CB3C25E3262400E0C4B5 /* ProgressController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressController.swift; sourceTree = "<group>"; };
 		ADA5CB4025E32B8B00E0C4B5 /* OptionsHomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsHomeCell.swift; sourceTree = "<group>"; };
+		ADA5CB4925E33DE300E0C4B5 /* VideoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPicker.swift; sourceTree = "<group>"; };
+		ADA5CB4D25E3459200E0C4B5 /* VideoShareController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoShareController.swift; sourceTree = "<group>"; };
 		D0C1A794C233251EB3E3A4DA /* Pods-Prueba conocimientos Francisco.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prueba conocimientos Francisco.debug.xcconfig"; path = "Target Support Files/Pods-Prueba conocimientos Francisco/Pods-Prueba conocimientos Francisco.debug.xcconfig"; sourceTree = "<group>"; };
 		D730A6D49FC24EBEF809DC71 /* Pods_Prueba_conocimientos_Francisco.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Prueba_conocimientos_Francisco.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -137,6 +141,7 @@
 			children = (
 				ADA5CB2625E2F72A00E0C4B5 /* Extensions.swift */,
 				ADA5CB2925E2F81500E0C4B5 /* ImageName.swift */,
+				ADA5CB4925E33DE300E0C4B5 /* VideoPicker.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -162,6 +167,7 @@
 				ADA5CB3525E31E8400E0C4B5 /* HomeCollectionController.swift */,
 				ADA5CB3925E31E9900E0C4B5 /* ProfileController.swift */,
 				ADA5CB3C25E3262400E0C4B5 /* ProgressController.swift */,
+				ADA5CB4D25E3459200E0C4B5 /* VideoShareController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -296,10 +302,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADA5CB4A25E33DE300E0C4B5 /* VideoPicker.swift in Sources */,
 				ADA5CB2A25E2F81500E0C4B5 /* ImageName.swift in Sources */,
 				ADA5CB4125E32B8B00E0C4B5 /* OptionsHomeCell.swift in Sources */,
 				ADA5CB2725E2F72A00E0C4B5 /* Extensions.swift in Sources */,
 				ADA5CB0225E2DAAB00E0C4B5 /* ViewController.swift in Sources */,
+				ADA5CB4E25E3459200E0C4B5 /* VideoShareController.swift in Sources */,
 				ADA5CB1725E2E2D500E0C4B5 /* LogInController.swift in Sources */,
 				ADA5CB3225E318C400E0C4B5 /* HomeController.swift in Sources */,
 				ADA5CB3D25E3262400E0C4B5 /* ProgressController.swift in Sources */,
