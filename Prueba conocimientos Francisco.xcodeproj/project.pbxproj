@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		432E81C07B430D9ED0AAC984 /* Pods_Prueba_conocimientos_Francisco.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D730A6D49FC24EBEF809DC71 /* Pods_Prueba_conocimientos_Francisco.framework */; };
+		AD297B6625E4CC7600846B0E /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD297B6525E4CC7600846B0E /* LocationManager.swift */; };
 		ADA5CAFE25E2DAAB00E0C4B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA5CAFD25E2DAAB00E0C4B5 /* AppDelegate.swift */; };
 		ADA5CB0025E2DAAB00E0C4B5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA5CAFF25E2DAAB00E0C4B5 /* SceneDelegate.swift */; };
 		ADA5CB0225E2DAAB00E0C4B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA5CB0125E2DAAB00E0C4B5 /* ViewController.swift */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		60BBDDADEAEDBB8D74D12C0C /* Pods-Prueba conocimientos Francisco.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prueba conocimientos Francisco.release.xcconfig"; path = "Target Support Files/Pods-Prueba conocimientos Francisco/Pods-Prueba conocimientos Francisco.release.xcconfig"; sourceTree = "<group>"; };
+		AD297B6525E4CC7600846B0E /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		ADA5CAFA25E2DAAB00E0C4B5 /* Prueba conocimientos Francisco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Prueba conocimientos Francisco.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADA5CAFD25E2DAAB00E0C4B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADA5CAFF25E2DAAB00E0C4B5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				ADA5CB2625E2F72A00E0C4B5 /* Extensions.swift */,
 				ADA5CB2925E2F81500E0C4B5 /* ImageName.swift */,
 				ADA5CB4925E33DE300E0C4B5 /* VideoPicker.swift */,
+				AD297B6525E4CC7600846B0E /* LocationManager.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 			files = (
 				ADA5CB4A25E33DE300E0C4B5 /* VideoPicker.swift in Sources */,
 				ADA5CB2A25E2F81500E0C4B5 /* ImageName.swift in Sources */,
+				AD297B6625E4CC7600846B0E /* LocationManager.swift in Sources */,
 				ADA5CB4125E32B8B00E0C4B5 /* OptionsHomeCell.swift in Sources */,
 				ADA5CB2725E2F72A00E0C4B5 /* Extensions.swift in Sources */,
 				ADA5CB0225E2DAAB00E0C4B5 /* ViewController.swift in Sources */,

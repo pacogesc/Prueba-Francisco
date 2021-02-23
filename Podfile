@@ -9,6 +9,7 @@ target 'Prueba conocimientos Francisco' do
   pod 'JGProgressHUD', '2.2'
   pod 'LBTATools', '1.0.12'
   pod 'IQKeyboardManagerSwift', '6.5.6'
+  pod 'Mapbox-iOS-SDK'
 
 end
 

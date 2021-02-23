@@ -19,7 +19,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         IQKeyboardManager.shared.enableAutoToolbar = false
         IQKeyboardManager.shared.shouldResignOnTouchOutside = true
         
+        //NotificationCenter.default.addObserver(self, selector: #selector(locationDidChangeAuthorization), name: NSNotification.Name.init(kLocationDidChangeAuthorization), object: nil)
+        
         return true
+    }
+    
+    //MARK: - Location Authorizartion
+    
+    @objc private func locationDidChangeAuthorization(_ notification: Notification) {
+        guard let window = UIApplication.shared.windows.filter({ $0.isKeyWindow }).first else { return }
+        guard let rootViewController = window.rootViewController else { return }
+        let alertController = UIAlertController(title: "Ubicación no autorizada", message: "Para el correcto funcionamiento de la aplicación por favor permita que utilice siempre su ubicación.", preferredStyle: .alert)
+        alertController.addAction(.init(title: "De acuerdo", style: .default, handler: openSettings(_:)))
+        rootViewController.present(alertController, animated: true, completion: nil)
+    }
+    
+    private func openSettings(_ alert: UIAlertAction) {
+        guard let settingsUrl = URL(string: UIApplication.openSettingsURLString) else { return }
+        if UIApplication.shared.canOpenURL(settingsUrl) {
+            UIApplication.shared.open(settingsUrl, options: [:]) { (success) in
+                print("Settings opened: \(success)")
+            }
+        }
     }
 
     // MARK: UISceneSession Lifecycle
